@@ -1,0 +1,79 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/montserrat.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+html, body {
+    overflow-x: hidden;
+    font-size: 1rem;
+    font-family: Montserrat;
+    overflow-y: hidden;
+}
+body {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+.header {
+    display: flex;
+    padding: 50px 160px 0 160px;
+    justify-content: space-between;
+}
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+.header__nav {
+    color: #fff;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header__nav__address, .header__nav__number {
+    font-size: 1rem;
+}
+.header__nav img {
+    width: 24px;
+    height: 24px;
+    display: inline;
+    font-weight: 700;
+}
+.dot {
+    font-size: 2rem;
+    top: -2px;
+    position: relative;
+}
+.header__nav__top {
+    display: flex;
+    align-items: center;
+    margin-top: -3px;
+    column-gap: 5px;
+}
+.header_nav_language {
+    margin-right: 10px;
+}
+.header__nav__bottom {
+    font-size: 1rem;
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    justify-content: flex-end;
+}
+.banner__image {
+    width: 872.34px;
+    height: 1000px;
+    position: absolute;
+    bottom: -22px;
+    right: 524px;
+}
