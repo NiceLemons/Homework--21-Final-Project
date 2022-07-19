@@ -6,6 +6,7 @@
 }
 * {
     box-sizing: border-box;
+    border: 1px solid white;
 }
 
 img {
@@ -17,20 +18,22 @@ html, body {
     overflow-x: hidden;
     font-size: 1rem;
     font-family: Montserrat;
-    overflow-y: hidden;
 }
 body {
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 .header {
     display: flex;
-    padding: 50px 160px 0 160px;
+    padding: 50px 143px 869px 160px;
     justify-content: space-between;
 }
 .header__logo {
     display: flex;
     flex-direction: column;
     row-gap: 6px;
+}
+header {
+    position: relative;
 }
 .header__nav {
     color: #fff;
@@ -74,6 +77,21 @@ body {
     width: 872.34px;
     height: 1000px;
     position: absolute;
-    bottom: -22px;
-    right: 524px;
+    top: 0;
+    left: calc(50% - 856.34px/2 + 0.17px);
+}
+.banner__text {
+    position: absolute;
+    color: aliceblue;
+    font-size: 2.375rem;
+    left: calc(50% - 533px/2);
+    top: 482px;
+    z-index: 2;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.slide__image {
+    position: absolute;
+    bottom: 9px;
+    left: calc(50% - 4px);
 }
