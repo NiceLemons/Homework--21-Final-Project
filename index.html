@@ -4,10 +4,89 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Final Project</title>
     </head>
     <body>
+        <div class="gradient__body">
+            <header>
+                <div class="header">
+                    <div class="container__header">
+                        <div class="header__logo">
+                            <img src="image/header/logo.svg" alt="logo">
+                            <img src="image/header/law__logo.svg" alt="law__logo">
+                        </div>
+                        <div class="header__nav">
+                            <div class="header__nav__top">
+                                <span class="header__nav__top--language">УК</span>
+                                <span class="header__nav__top--language">РУ</span>
+                                <span class="header__nav__top--language">EN</span>
+                                &#8226
+                                <span class="header__nav__top--address">Kyiv, Mechnikova str, 14/1</span>
+                                &#8226
+                                <span class="header__nav__top--number">0800 211 927</span>
+                                &#8226
+                                <img src="image/header/facebook__logo.svg" alt="facebook__logo">
+                            </div>
+                            <div class="header__nav__bottom">
+                                <span>about us</span>
+                                <span>services</span>
+                                <span>team</span>
+                                <span>publications</span>
+                                <span>contact</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <p>you legal solutions provider</p>
+                        <img src="image/header/banner.svg" alt="">
+                    </div>
+                    <div id="button1Id" class="header__scroll">
+                        <a href="#main">
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle_stroke" opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                            <path class="path_stroke" d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                </header>
+                    <main id="main">
+                        <div class="container__about__company">
+                            <div class="container__about__company--wrapper">
+                                <div class="container__about__company--wrapper__list">
+                                    <p>Consistent</p>
+                                    <p>Customer oriented</p>
+                                    <p>Innovative</p>
+                                    <p>Business oriented</p>
+                                </div>
+                                <div class="container__about__company--wrapper__desc">
+                                    <h2>We turn the idea of legal services</h2>
+                                    <p>
+                                        Consolidating many years of experience and practice, the company's lawyers accompany complex projects
+                                        and achieve a number of important decisions for the industry. Many of them form the practice of
+                                        applying the law of the sea in Ukraine.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="image/header/banner.svg" alt="">
+                    </main>
+        </div>
+        <script>
+            new fullpage('#fullpage', {
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: true
+            });
+            $('#button1Id').click(function(){
+                $.fn.fullpage.moveSectionDown();
+            });
 
+
+            $('#button2Id').click(function(){
+                $.fn.fullpage.moveSectionUp();
+            });
+        </script>
     </body>
 </html>

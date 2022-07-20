@@ -1,0 +1,43 @@
+.container__about__company {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0;
+}
+.container__about__company--wrapper__list {
+    font: 700 2.375rem 'Montserrat-Bold';
+    color: #B3B3BA;
+}
+.container__about__company--wrapper__list p:hover {
+    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.container__about__company--wrapper {
+    display: flex;
+    column-gap: 124px;
+    margin-top: 96px;
+}
+.container__about__company--wrapper__list {
+    flex: 1 1 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 30px;
+}
+.container__about__company--wrapper__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+    padding: 58px 0 0 0;
+}
+.container__about__company--wrapper__desc h2 {
+    font: 700 1.875rem 'Montserrat-Bold';
+    color: #FFFFFF;
+}
+.container__about__company--wrapper__desc p {
+    font: 400 1.1875rem 'Montserrat-Regular';
+    color: #FFFFFF;
+    line-height: 30px;
+}

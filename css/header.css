@@ -1,0 +1,74 @@
+header {
+    position: relative;
+    height: 100vh;
+}
+.container__header {
+    padding: 50px 150px 0 160px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+.header__nav {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    flex: 0 0 470px;
+}
+.header__nav__top {
+    display: flex;
+    align-items: center;
+    margin-top: -3px;
+    column-gap: 9px;
+}
+.header__nav__top img {
+    max-width: 24px;
+    max-height: 24px;
+    display: inline;
+}
+.header__nav__top--language {
+    font: 700 0.75rem 'Montserrat';
+}
+.header__nav__top--dot {
+    font-size: 2rem;
+}
+.header__nav__top--address {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.header__nav__top--number {
+    font-weight: 700;
+    font-size: 1rem;
+}
+.banner p {
+    font: 700 2.375rem 'Montserrat';
+    color: white;
+    position: absolute;
+    bottom: 455px;
+    left: 686px;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+.banner img {
+    max-width: 872.34px;
+    position: absolute;
+    top: 0px;
+    width: 872.34px;
+    left: 525px;
+    max-height: 100vh;
+}
+.header__scroll {
+    position: absolute;
+    bottom: 6px;
+    z-index: 2;
+    left: 939px;
+}
+.header__scroll:hover .circle_stroke {
+        stroke: #F0145A;
+}
+.header__scroll:hover .path_stroke {
+    stroke: #F0145A;
+}
