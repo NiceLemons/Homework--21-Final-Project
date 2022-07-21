@@ -70,9 +70,19 @@ header {
     right: 0;
     text-align: center;
 }
-.header__scroll:hover .circle_stroke {
+.header__scroll a:hover .circle_stroke {
         stroke: #F0145A;
 }
-.header__scroll:hover .path_stroke {
+.header__scroll a:hover .path_stroke {
     stroke: #F0145A;
+}
+.banner__text--wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
 }
