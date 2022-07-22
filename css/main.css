@@ -175,7 +175,7 @@
 }
 .container__main__team--about {
     background: #F5F5FA;
-    border-radius: 12px;
+    border-radius: 0 12px 12px 0;
     padding-top: 30px;
     padding-left: 30px;
     flex: 1 0 70%;
