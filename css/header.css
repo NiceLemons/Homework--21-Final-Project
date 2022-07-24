@@ -7,6 +7,9 @@ header {
     display: flex;
     justify-content: space-between;
 }
+.dot {
+    font-size: 2.5rem;
+}
 .header__logo {
     display: flex;
     flex-direction: column;
@@ -16,13 +19,22 @@ header {
     display: flex;
     color: white;
     flex-direction: column;
-    flex: 0 0 470px;
+    flex: 0 0 480px;
 }
 .header__nav__top {
     display: flex;
     align-items: center;
-    margin-top: -3px;
-    column-gap: 9px;
+    margin-top: -8px;
+    column-gap: 6px;
+    position: relative;
+    left: 13px;
+}
+.header__nav__bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 13px;
+    column-gap: 20px;
+    justify-content: flex-end;
 }
 .header__nav__top img {
     max-width: 24px;
@@ -31,6 +43,9 @@ header {
 }
 .header__nav__top--language {
     font: 700 0.75rem 'Montserrat';
+}
+.header__nav__top--language:not(:nth-of-type(1)) {
+    margin-left: 10px;
 }
 .header__nav__top--dot {
     font-size: 2rem;
