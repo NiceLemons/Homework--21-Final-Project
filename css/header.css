@@ -3,9 +3,12 @@ header {
     height: 100vh;
 }
 .container__header {
-    padding: 50px 150px 0 160px;
+    max-width: 1590px;
+    padding-top: 50px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .dot {
     font-size: 2.5rem;
@@ -19,7 +22,9 @@ header {
     display: flex;
     color: white;
     flex-direction: column;
-    flex: 0 0 480px;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin: 1px -9px 10px 0;
 }
 .header__nav__top {
     display: flex;
@@ -63,12 +68,10 @@ header {
     color: white;
     position: absolute;
     bottom: 455px;
-    left: 686px;
     z-index: 2;
     letter-spacing: 1px;
 }
 .banner img {
-    max-width: 872.34px;
     position: absolute;
     top: 0px;
     width: 872.34px;
