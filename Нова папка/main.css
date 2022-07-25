@@ -1,7 +1,7 @@
 .container__about__company {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
 .container__about__company--wrapper__list p {
     font: 700 2.375rem 'Montserrat-Bold';
@@ -57,9 +57,9 @@
 .container__main {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
     position: relative;
-
+    left: 5px;
 }
 .container__main h3 {
     font: 700 0.875rem 'Montserrat-Bold';
@@ -98,29 +98,25 @@
     padding-bottom: 57px;
     position: relative;
 }
-main {
-    position: relative;
-}
-.main__after::before {
+.container__main__content::after {
     content: '';
-    left: 22px;
-    right: 12px;
+    left: -140px;
+    right: -140px;
     bottom: -10px;
     position: absolute;
     height: 10px;
     background-color: #CACADB;
     border-radius: 0 0 12px 12px;
 }
-main::after {
+.after_one::after {
     content: '';
-    right: 30px;
+    left: -120px;
+    right: -120px;
     position: absolute;
     height: 10px;
     background-color: #CACADB;
     border-radius: 0 0 12px 12px;
     bottom: -20px;
-    width: auto;
-    left: 38px;
 }
 .container__main__content__card {
     display: flex;
@@ -205,11 +201,11 @@ main::after {
     overflow: hidden;
 }
 .container__companies {
-    max-width: 1720px;
+    width: 1720px;
     margin: 0 auto;
     padding: 0;
     position: relative;
-
+    left: 5px;
 }
 .container__companies_list {
     display: flex;
@@ -275,6 +271,9 @@ main::after {
     word-spacing: 2px;
     margin-bottom: 28px;
 }
+.container__main__news__card--image {
+    max-height: 200px;
+}
 .container__main__news__card--details h4 {
     font: 700 1rem 'Montserrat-Bold';
     color: #24A3FF;
@@ -308,10 +307,10 @@ main::after {
 }
 .bg-gray {
     background: #F5F5FA;
-    padding: 31px 0 28px 0;
+    padding: 31px 0 0 0;
     position: relative;
 }
-.footer:after {
+.container__main:nth-of-type(2):after {
     content: '';
     position: absolute;
     left: 0;
@@ -319,18 +318,15 @@ main::after {
     height: 2px;
     background-color: #E6E6F0;
     bottom: 10px;
-    z-index: 2241;
-    width: 98%;
 }
 .container__main__news__card--details:after {
     content: "";
     position: absolute;
     left: 30px;
-    right: 14px;
+    right: -30px;
     bottom: -20px;
     background: #E6E6F0;
     height: 4px;
-    width: auto;
 }
 .after:after {
     content: "";
@@ -340,7 +336,6 @@ main::after {
     bottom: -40px;
     background: #E6E6F0;
     height: 4px;
-    width: 80%;
 }
 .after:nth-of-type(2):after {
     bottom: -18px;
@@ -348,10 +343,9 @@ main::after {
 .container__main__news {
     display: flex;
     column-gap: 30px;
-    flex-wrap: wrap;
 }
 .container__main__news__card {
-    flex: 1 1 32%;
+    flex: 1 1 33%;
 }
 .footer {
     margin-top: 75px;
