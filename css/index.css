@@ -76,3 +76,87 @@ a[ id= "brbr" ]:target ~ #main article.panel {
     src: url(../fonts/Montserrat-Regular.ttf);
     font-weight: 400;
 }
+@media screen and (max-width: 1440px) {
+    .banner img {
+        width: auto;
+        top: 11px;
+    }
+    header {
+        height: 67vh;
+    }
+    .container__header {
+        padding: 50px 60px 0 60px
+    }
+    .banner p {
+        top: 388px;
+        bottom: 0;
+    }
+    .container__about__company--wrapper {
+        margin-top: 283px;
+        column-gap: 127px;
+    }
+    .container__about__company--wrapper__list {
+        flex: 1 1 38%;
+    }
+    .container__about__company--wrapper__desc {
+        padding: 30px 137px 0 0;
+    }
+    .container__about__company--wrapper__desc p {
+        max-width: 577px;
+    }
+    .header__scroll {
+        bottom: -180px
+    }
+    .container__main__content__card {
+        flex: 0 0 30%;
+    }
+    .pad1 {
+        padding: 0 60px 30px 60px !important;
+    }
+    .container__main__content {
+        row-gap: 85px;
+        padding-bottom: 54px;
+    }
+    .container__main__team--about p {
+        max-width: 851px;
+    }
+    .slick-dotted.slick-slider {
+        margin: -2px 46px 60px 46px;
+    }
+    .container__main {
+        padding: 0 15px;
+    }
+    .container__main__team--image, .container__main__team--image  img {
+        height: 344px;
+    }
+    .bg-gray {
+        background: #F5F5FA;
+        padding: 0 0 28px 0;
+        position: relative;
+        margin: -27px 0 0px 40px;
+    }
+    .container__main__news__card {
+        flex: 1 1 31%;
+    }
+    .container__main__news__card {
+        flex: 0 1 31%;
+    }
+    .container__main__news {
+        column-gap: 24px;
+    }
+    .container__main__news__card--image img {
+        height: 200px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .container__companies_list {
+        margin-top: 30px;
+    }
+    .container__main__news__card--details {
+        word-spacing: 0px;
+    }
+    .container__main__news__card:nth-of-type(2) .container__main__news__card--details {
+        margin: -3px 0 0 -7px;
+    }
+}

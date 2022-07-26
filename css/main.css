@@ -33,7 +33,7 @@
     margin-bottom: 70px;
 }
 .container__about__company--wrapper__list {
-    flex: 1 1 75%;
+    flex: 1 1 78%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -57,7 +57,7 @@
 .container__main {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
     position: relative;
 
 }
@@ -85,7 +85,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     margin-top: 9px;
     margin-bottom: 30px;
 }
@@ -165,13 +164,21 @@ main::after {
     font: 700 0.875rem 'Montserrat-Bold';
     color: #24A3FF;
 }
+.r5 {
+    position: relative;
+    right: -5px;
+}
+.container__main__team--image {
+    width: 399px;
+    height: 300px;
+    overflow: hidden;
+}
 .container__main__team--about p {
     font: 700 2.375rem 'Montserrat-Bold';
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     margin-top: -6px;
     margin-bottom: 30px;
 }
@@ -204,11 +211,16 @@ main::after {
 .container__main__team--wrapper {
     overflow: hidden;
 }
+.rl {
+    position: relative;
+    left: 5px;
+}
 .container__companies {
     max-width: 1720px;
     margin: 0 auto;
     padding: 0;
     position: relative;
+    left: 5px;
 
 }
 .container__companies_list {
@@ -318,7 +330,7 @@ main::after {
     right: 0;
     height: 2px;
     background-color: #E6E6F0;
-    bottom: 10px;
+    bottom: 115px;
     z-index: 2241;
     width: 98%;
 }
