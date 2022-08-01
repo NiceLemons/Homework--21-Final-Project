@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  padding: 42px 0;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  left: 5px;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar-track
+{
+	background: rgb(109, 106, 106);
+    border-radius: 20px;
+}
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background: rgb(109, 106, 106);
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background: #F0145A;
+    border-radius: 20px
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  left: 5px;
+}
+.header__nav {
+  display: flex;
+  color: #B3B3BA;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__number--span {
+  font: 700 1rem 'Montserrat-Bold';
+  color: #B3B3BA;
+}
+.header a {
+  color: #24A3FF;
+}
+.header__nav__top {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+  position: relative;
+  column-gap: 5px;
+}
+.header__nav__bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+  margin-right: -1px;
+  column-gap: 12px;
+  justify-content: flex-end;
+  letter-spacing: 1px;
+}
+.header__nav__top img {
+  max-width: 24px;
+  max-height: 24px;
+  display: inline;
+}
+.header__nav__top--language {
+  font: 700 0.75rem 'Montserrat';
+}
+.header__nav__top--language:not(:nth-of-type(1)) {
+  margin-left: 10px;
+}
+.header__nav__top--dot {
+  font-size: 2rem;
+}
+.header__nav__top--address {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.header__nav__top--number {
+  font-weight: 700;
+  font-size: 1rem;
+}
+h1 {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font: 700 2.375rem 'Montserrat-Bold';
+  text-align: center;
+  line-height: 46px;
+  margin-bottom: 60px;
+}
+.container__team__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  column-gap: 60px;
+  row-gap: 63px;
+  margin-bottom: 60px;
+}
+
+.container__team__list__card {
+  flex: 0 0 30%;
+}
+.container__team__list__card__image {
+  width: 493.33px;
+  height: 446px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.container__team__list__card__image img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+  position: relative;
+  bottom: 48px;
+}
+.container__team__list__card__desc {
+  margin-top: -53px;
+  position: relative;
+}
+.container__team__list__card__desc h4 {
+  font: 700 1rem 'Montserrat-Bold';
+  color: #323264;
+  margin-bottom: 6px;
+}
+.container__team__list__card__desc span {
+  font: 400 0.875rem 'Montserrat-Regular';
+  color: #B3B3BA;
+}
+.container__team__list__card h4:hover {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.container__team__list__card__desc::before {
+  content: url(../image/page_team/team/More.svg);
+  position: absolute;
+  left: 94%;
+  bottom: 22%;
+}
+.container__team__list__card__desc::before:hover {
+  fill: black;
+}
+.bg--gray {
+  background-color: #f5f5f5;
+  padding-top: 31px;
+}
+.container__info__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.container__info--left--top {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+.container__info--left--bottom {
+  display: flex;
+  align-items: center;
+}
+.container__info--left--bottom img {
+  display: inline;
+}
+.container__info--left--bottom {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+.address {
+  font: 400 1rem 'Montserrat-Regular';
+  color: #323264;
+}
+.on__map {
+  font: 700 0.75rem 'Montserrat-Bold';
+  color: #24A3FF;
+  letter-spacing: 1px;
+}
+.number {
+  font: 700 1rem 'Montserrat-Regular';
+  color: #46466E;
+  text-align: right;
+}
+.mail {
+  font: 700 1rem 'Montserrat-Bold';
+  color: #24A3FF;
+}
+.legal {
+  font: 400 1rem 'Montserrat-Regular';
+  color: #B3B3BA;
+}
